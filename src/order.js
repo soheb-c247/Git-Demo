@@ -15,3 +15,5 @@ function returnOrderInfo(order) {
 module.exports = { createOrder, returnOrderInfo };
 
 // Support for discount calculations applied to order total
+
+// Display logic (contains intentional bugs)

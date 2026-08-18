@@ -11,3 +11,5 @@ A simple e-commerce project for Git training.
 Run the scripts using Node.js.
 
 - Cart Discounts
+
+- Discount Display UI
