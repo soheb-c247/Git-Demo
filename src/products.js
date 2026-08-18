@@ -1,3 +1,4 @@
+// Added new seasonal products
 const products = [
     { id: 1, name: "Laptop", price: 999, stock: 10 },
     { id: 2, name: "Mouse", price: 25, stock: 50 },
