@@ -17,6 +17,11 @@ function getTotal() {
     return getSubtotal();
 }
 
+function filterCartByPrice(maxPrice) {
+    return cart.filter(p => p.price <= maxPrice);
+}
+
+module.exports = { cart, addProduct, removeProduct, getSubtotal, getTotal, filterCartByPrice };
 function searchCart(query) {
     return cart.filter(p => p.name.toLowerCase().includes(query.toLowerCase()));
 }

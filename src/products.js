@@ -5,6 +5,7 @@ const products = [
 ];
 
 function findProducts() {
+    // Return all products, filtered if needed
     return products;
 }
 
