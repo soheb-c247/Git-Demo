@@ -17,3 +17,5 @@ module.exports = { products, findProducts, searchProducts };
 // Note: Product models will be migrated to DB soon.
 
 // Add sorting logic part 1
+
+// Improve sorting logic part 2
