@@ -10,8 +10,9 @@ function findProducts() {
 }
 
 function searchProducts(query) {
-    // Filter products by max price and min stock
-    return products.filter(p => p.price <= query.maxPrice && p.stock >= query.minStock);
+    // Basic search functionality (case-insensitive)
+    const lowerQuery = query.toLowerCase();
+    return products.filter(p => p.name.toLowerCase().includes(lowerQuery));
 }
 
 module.exports = { products, findProducts, searchProducts };

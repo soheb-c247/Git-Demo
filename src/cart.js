@@ -1,7 +1,8 @@
 const cart = [];
 
-function addProduct(product) {
+function addProduct(product, quantity = 1) {
     cart.push(product);
+    console.log(`Product ${product.name} added to cart.`);
 }
 
 function removeProduct(productId) {
@@ -22,3 +23,8 @@ function filterCartByPrice(maxPrice) {
 }
 
 module.exports = { cart, addProduct, removeProduct, getSubtotal, getTotal, filterCartByPrice };
+function searchCart(query) {
+    return cart.filter(p => p.name.toLowerCase().includes(query.toLowerCase()));
+}
+
+module.exports = { cart, addProduct, removeProduct, getSubtotal, getTotal, searchCart };
