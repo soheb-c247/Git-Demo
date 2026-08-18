@@ -1,7 +1,8 @@
 const cart = [];
 
-function addProduct(product) {
+function addProduct(product, quantity = 1) {
     cart.push(product);
+    console.log(`Product ${product.name} added to cart.`);
 }
 
 function removeProduct(productId) {
