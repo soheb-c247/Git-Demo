@@ -9,3 +9,5 @@ A simple e-commerce project for Git training.
 
 ## Basic usage
 Run the scripts using Node.js.
+
+- Cart Discounts
