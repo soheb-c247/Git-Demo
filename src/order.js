@@ -1,9 +1,10 @@
 const { getTotal } = require('./cart');
 
 function createOrder(customer) {
+    const calculatedTotal = getTotal(); // Fixed calculation
     return {
         customerInfo: customer,
-        total: getTotal(),
+        total: calculatedTotal > 0 ? calculatedTotal : 0,
         date: new Date()
     };
 }

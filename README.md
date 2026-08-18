@@ -9,3 +9,5 @@ A simple e-commerce project for Git training.
 
 ## Basic usage
 Run the scripts using Node.js.
+
+Bugfix: Fixed order total calculation to prevent negative totals.
