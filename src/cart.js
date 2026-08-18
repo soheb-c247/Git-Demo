@@ -17,8 +17,4 @@ function getTotal() {
     return getSubtotal();
 }
 
-function searchCart(query) {
-    return cart.filter(p => p.name.toLowerCase().includes(query.toLowerCase()));
-}
-
-module.exports = { cart, addProduct, removeProduct, getSubtotal, getTotal, searchCart };
+module.exports = { cart, addProduct, removeProduct, getSubtotal, getTotal };
