@@ -13,3 +13,5 @@ function searchProducts(query) {
 }
 
 module.exports = { products, findProducts, searchProducts };
+
+// Temporary flash sale product changes

@@ -18,3 +18,5 @@ function getTotal() {
 }
 
 module.exports = { cart, addProduct, removeProduct, getSubtotal, getTotal };
+
+// Cart limits for flash sale
