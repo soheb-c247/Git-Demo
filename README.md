@@ -9,3 +9,6 @@ A simple e-commerce project for Git training.
 
 ## Basic usage
 Run the scripts using Node.js.
+
+## Development Mode
+Warning: unstable features may be present here.

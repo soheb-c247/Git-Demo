@@ -13,3 +13,5 @@ function searchProducts(query) {
 }
 
 module.exports = { products, findProducts, searchProducts };
+
+// Note: Product models will be migrated to DB soon.
