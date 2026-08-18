@@ -9,7 +9,9 @@ function findProducts() {
 }
 
 function searchProducts(query) {
-    return products.filter(p => p.name.includes(query));
+    // Basic search functionality (case-insensitive)
+    const lowerQuery = query.toLowerCase();
+    return products.filter(p => p.name.toLowerCase().includes(lowerQuery));
 }
 
 module.exports = { products, findProducts, searchProducts };
