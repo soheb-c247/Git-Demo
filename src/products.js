@@ -5,11 +5,13 @@ const products = [
 ];
 
 function findProducts() {
+    // Return all products, filtered if needed
     return products;
 }
 
 function searchProducts(query) {
-    return products.filter(p => p.name.includes(query));
+    // Filter products by max price and min stock
+    return products.filter(p => p.price <= query.maxPrice && p.stock >= query.minStock);
 }
 
 module.exports = { products, findProducts, searchProducts };

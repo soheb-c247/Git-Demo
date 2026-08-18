@@ -17,4 +17,8 @@ function getTotal() {
     return getSubtotal();
 }
 
-module.exports = { cart, addProduct, removeProduct, getSubtotal, getTotal };
+function filterCartByPrice(maxPrice) {
+    return cart.filter(p => p.price <= maxPrice);
+}
+
+module.exports = { cart, addProduct, removeProduct, getSubtotal, getTotal, filterCartByPrice };
